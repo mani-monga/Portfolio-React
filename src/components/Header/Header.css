@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    z-index: 2; 
+    box-sizing: border-box;
+    overflow: hidden;
+    background: white;
+}
+
+.dark .header{
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+.logo{
+  flex-basis: 30%;  
+  }
+.logo h2 a{
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  margin: 0 10px;
+}
+
+.menubtn{
+  display: none;
+}
+
+.navbar {
+ flex-basis: 60%;
+}
+.navbar ul{
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-end;
+  height: fit-content;
+  opacity: 1; 
+}
+.navbar ul li {
+    list-style: none ;
+    padding: 20px 30px;
+    transition: 0.3s;
+    text-align: center;
+}
+.navbar ul li a{
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+.navbar ul li a i{
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  padding:5px;
+  transition: 0.3s;
+  margin-left: 10px;
+}
+.navbar ul li a:hover i{
+  background-color: yellow;
+  border-radius: 50%;
+  transform: rotate(360deg);
+}
+.dark .navbar ul li a i{
+  transition: 1s;
+}
+.dark .navbar ul li a:hover i{
+  color: #000;
+}
+.themeToggle svg{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.themeToggle svg:hover{
+  transform: rotate(60deg);
+}
+.themeToggle svg.hidden{
+  display: none;
+}
+
+@media only screen and (max-width: 1000px){
+
+
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .logo svg{
+        color: white;
+        font-size: 2em;
+        margin: 5px;
+      }
+      .header{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+      }
+      .navbar ul{
+        display: none;
+        flex-direction: column; 
+        height:300px;
+        opacity: 1;
+      }
+      .navbar ul li{
+        text-align: center;
+      }  
+    
+      .menubtn{
+        all: unset;
+        width: 30px;
+        margin-right: 10px;
+      }
+      .menubtn:hover{
+        cursor: pointer;
+      }
+      .menubtn::before{
+        all: unset;
+      }
+      .menubtn::before,
+      .menubtn::after,
+      .menubtn div{
+        background: rgb(0, 0, 0);
+        content: "";
+        display: block;
+        height: 4px;
+        border-radius: 3px;
+        margin: 7px 0;
+        transition: 0.5s;
+      }
+
+      .dark .menubtn::before,.dark .menubtn::after,.dark .menubtn div{
+        background: #fff;
+      }
+
+      .menubtn:active:before {
+        transform: translateY(12px) rotate(135deg);
+      }
+      .menubtn:active:after {
+        transform: translateY(-12px) rotate(-135deg);
+      }
+      .menubtn:active div {
+        transform: scale(0);
+      }
+      .themeToggle{
+        position: absolute;
+        right: 3rem;
+        top: 12px;
+      }
+
+      footer p{
+        display: none;
+      }
+
+      footer span{
+        display: inline;
+      }
+}

@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+.profile{
+  position: relative;
+  display: flex;
+  width: 70%;
+  min-height: 70vh;
+  justify-content:center;
+  margin:30px auto;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.dark .profile{
+  background-color: #0f0f0f;
+  color: #fff;
+  box-shadow:0px 0px 7px 2px #999;
+}
+
+.intro{
+  flex-basis: 60%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin: 10px 30px 10px 10px;
+  gap: 30px;
+}
+.intro h2{
+  font-size: 3em;
+  font-family: 'Pacifico', cursive;
+}
+.intro div{
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 26px;
+  font-family: monospace;
+  word-spacing: 0px;
+}
+
+.btn{
+  background-color: #ddd;
+  width: 200px;
+  color: #444;
+  text-align: center;
+  margin: 10px 0 ;
+  padding: 10px;
+  transition: 1s;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0.09px white;
+}
+
+.btn:hover{
+  box-shadow: inset 9em 0 0 0 yellow;
+  color: black;
+}
+.image{
+  flex-basis: 40%;
+}
+.image img{
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px){
+
+body{
+  background: url(https://img.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg?t=st=1656340176~exp=1656340776~hmac=86d9fe692cdeed51d380e3ef873ff1ebf63d187ecddb844e7a9848921e3737c5&w=740);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+  
+.profile{
+  width: 90%;
+  height: auto;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.intro{
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+}
+.intro h2{
+  font-size: 2.5em;   
+}
+.intro div{
+  font-size: 1em;
+}
+
+.image{
+  position: absolute;
+  bottom: 0;
+}
+.image img{
+  width: 40%;
+  height: 40%;
+}
+.btn{
+  width: 300px;
+}
+
+}
