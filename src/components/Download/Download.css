@@ -1,67 +1,84 @@
-.downloadcontainer{
+.downloadcontainer {
   position: fixed;
   bottom: 30px;
   right: 30px;
   display: flex;
   justify-content: center;
+  z-index: 1000;
 }
 
 #download {
-  width: 200px;
-  overflow: hidden;
-  background: #000;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
   font-size: 1.2rem;
   outline: none;
   border: none;
-  padding: 20px;
-  transition: 1s;
+  transition: all 0.4s ease-in-out;
   color: white;
-  border-radius: 10px;
   display: flex;
-  filter: invert(1);
+  align-items: center;
   justify-content: center;
-  box-shadow: 0px 0px 7px 2px #999;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  /* transition-delay: 0.3s; */
 }
 
-.dark #download{
-  filter: invert(0);
-}
-
-#download span {
-  display: inline-block;
-  margin-left: 0.5em;
-  transition: all 0.3s ease-in-out;
-}
-#download img {
-  transition: all 0.3s ease-in-out;
-  filter: invert(100%);
+#download svg {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease-in-out;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #download:hover {
-  cursor: pointer;
+  width: 180px;
+  border-radius: 30px;
+  justify-content: flex-start;
+  padding-left: 20px;
 }
-#download:active {
-  transform: scale(1.1);
-}
+
 #download:hover img {
-  transform: translateX(70px) scale(1.1);
+  transform: translate(-50%, -50%) scale(1.1);
+  left: 35px;
+}
+
+#download span {
+  opacity: 0;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 40px;
+  /* transition: opacity 0.3s ease-in-out; */
 }
 
 #download:hover span {
-  transform: translate(10em);
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  /* transition-delay: 0.3s; */
+}
+#download:hover svg {
+  left: 35px;
 }
 
-@media only screen and (max-width: 1000px) {
-  .downloadcontainer{
+@media only screen and (max-width: 768px) {
+  .downloadcontainer {
     justify-content: flex-end;
   }
   #download {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
   }
-  #download span {
-    display: none;
-    transition-delay: 1s;
+  #download svg {
+    width: 25px;
+    height: 25px;
   }
 }

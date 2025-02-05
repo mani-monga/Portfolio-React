@@ -1,11 +1,40 @@
 const data = [
     {
         "id": 1,
+        "Name": "TaskMasterPlus",
+        "HostURL": "https://taskmasterplus.netlify.app/",
+        "ImageURL": "https://i.postimg.cc/y6J9xSPL/image.png",
+        "Description": "A robust task management web application built with ReactJS and Bootstrap, designed to simplify daily task tracking and improve productivity. It features a user-friendly interface and seamless performance for an optimal user experience.",
+        "TechStack": [ {
+                          "id": 1,
+                          "Name": "HTML5",
+                          "Icon": "https://cdn-icons-png.flaticon.com/512/1051/1051277.png"
+                        },
+                        {
+                          "id": 2,
+                          "Name": "CSS",
+                          "Icon": "https://cdn-icons-png.flaticon.com/512/732/732190.png"
+                        },
+                        {
+                          "id": 3,
+                          "Name": "JavaScript",
+                          "Icon": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+                        },
+                        {
+                          "id": 4,
+                          "Name": "ReactJs",
+                          "Icon": "https://cdn-icons-png.flaticon.com/512/1260/1260775.png"
+                        },
+                  
+                  ]
+      },
+    {
+        "id": 2,
         "Name": "Text-Utils",
         "GithubURl":"https://github.com/mani-monga/text-utility-tools",
         "HostURL": "https://text-utility-tools.netlify.app/",
         "ImageURL": "https://i.postimg.cc/BQfH7Nmb/textutils-desktop.jpg",
-        "Description": "This is my first React Project using react js and bootstrap",
+        "Description": "A versatile text manipulation tool developed using ReactJS and Bootstrap. This project offers various utilities like word counting, text conversion, and case formatting to make text processing more efficient and user-friendly",
         "TechStack": [ {
                           "id": 1,
                           "Name": "HTML5",
@@ -45,7 +74,7 @@ const data = [
         "GithubURl":"https://github.com/mani-monga/Slack",
         "HostURL": "https://slack-remastered.web.app/",
         "ImageURL": "https://i.postimg.cc/cJ8vK4gC/image.png",
-        "Description": "Web Chat Professional App",
+        "Description": "A real-time web chat application inspired by Slack, built with ReactJS and Firebase. It offers a sleek Material-UI interface, instant messaging, and channel-based communication, ideal for collaboration and team productivity.",
         "TechStack": [ {
                           "id": 1,
                           "Name": "HTML5",
@@ -90,7 +119,7 @@ const data = [
         "GithubURl":"https://github.com/mani-monga/GTBIT",
         "HostURL": "https://mani-monga.github.io/GTBIT",
         "ImageURL": "https://i.postimg.cc/5N5vhvr3/college-desktop.jpg",
-        "Description": "Guru Tegh Bahadur Institute Of Learning , this was my industrial trainign project a complete frontend template of a college website",
+        "Description": "A comprehensive front-end template for a college website developed during an industrial training project. This responsive and visually appealing design represents the modern face of educational institutions.",
         "TechStack": [ {
                           "id": 1,
                           "Name": "HTML5",
@@ -115,12 +144,12 @@ const data = [
                   ]
       },
       {
-        "id": 4,
+        "id": 5,
         "Name": "ToDo List",
         "GithubURl":"https://github.com/mani-monga/TodoList",
         "HostURL": "https://mani-monga.github.io/TodoList/",
         "ImageURL": "https://i.postimg.cc/c4sCZ5bz/image.png",
-        "Description": "ToDo list - A reactJs project to brush up my skills my state management skills in ReactJs and usage of hooks",
+        "Description": "A feature-rich to-do list application built with ReactJS to improve state management and enhance proficiency in React hooks. Designed for organizing tasks efficiently with a clean and intuitive interface.",
         "TechStack": [ {
                           "id": 1,
                           "Name": "HTML5",
@@ -145,12 +174,12 @@ const data = [
                   ]
       },
       {
-        "id": 5,
+        "id": 6,
         "Name": "Weather App",
         "GithubURl":"https://github.com/mani-monga/Weather",
         "HostURL": "https://weather-io-rho.vercel.app/",
         "ImageURL": "https://i.postimg.cc/QCS7gBtg/image.png",
-        "Description": "Weather App Hosted On Vercel Platform used for fetching weather based on weatherapi.com's api.",
+        "Description": "A responsive weather forecasting application hosted on Vercel, fetching real-time weather data using the WeatherAPI. It provides a simple and visually appealing interface for users to check weather conditions quickly.",
         "TechStack": [ {
                           "id": 1,
                           "Name": "HTML5",
@@ -175,11 +204,11 @@ const data = [
                   ]
       },
       {
-        "id": 6,
+        "id": 7,
         "Name": "Fitness Freak",
         "GithubURl":"https://github.com/mani-monga/FitnessFreak",
         "ImageURL": "https://i.postimg.cc/05w7Chdh/gym-desktop.jpg",
-        "Description": "Landing Page For Gym with Login Form",
+        "Description": "A high-impact landing page for a gym with a built-in login form. This project showcases a modern, responsive design aimed at promoting fitness services and engaging users effectively",
         "TechStack": [ {
           "id": 1,
                           "Name": "HTML5",
@@ -193,10 +222,10 @@ const data = [
                   ]
       }, 
       {
-        "id": 7,
+        "id": 8,
         "Name": "Sonika Garden",
         "ImageURL": "https://i.postimg.cc/FH9cNz5Q/sonika-garden-desktop.jpg",
-        "Description": "Landing Page For Banquet Hall",
+        "Description": "A landing page for a banquet hall that highlights services and amenities in a visually captivating layout. Designed for seamless navigation and a strong first impression",
         "TechStack": [ {
                           "id": 1,
                           "Name": "HTML5",
@@ -210,11 +239,11 @@ const data = [
                   ]
       }, 
       {
-        "id": 8,
+        "id": 9,
         "Name": "EduWiz",
         "ImageURL": "https://i.postimg.cc/SxD9s4kY/eduwiz.jpg",
         "GithubURl":"https://github.com/mani-monga/eduwiz",
-        "Description": "Landing Page for a NGO",
+        "Description": "A thoughtfully designed landing page for an NGO, emphasizing educational initiatives. This project combines simplicity with purpose-driven design to engage and inform visitors.",
         "TechStack": [ {
                           "id": 1,
                           "Name": "HTML5",

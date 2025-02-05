@@ -1,102 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
-.HobbiesWrapper{
-    width: 70%;
-    display: flex;
-    margin:100px auto;
-    padding-bottom: 50px;
-    border-radius:20px;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    box-sizing: border-box;
-    transition: 0.3s;
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap");
+
+.HobbiesWrapper {
+  width: 80%;
+  display: flex;
+  margin: 50px auto;
+  border-radius: 20px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  transition: 0.3s;
+  padding: 40px;
 }
-.dark .HobbiesWrapper{
-    background-color: #0f0f0f;
-    color: #fff;
-    box-shadow:0px 0px 7px 2px #999;
+.dark .HobbiesWrapper {
+  background-color: rgba(15, 15, 15, 0.8);
+  color: #fff;
+  box-shadow: 0px 0px 7px 2px #999;
 }
-h2.hobbiesHeading{
-    font-size: 2.5em;
-    font-family: 'Pacifico', cursive;
-    margin: 20px auto;
+h2.hobbiesHeading {
+  font-size: 2.5em;
+  font-family: "Pacifico", cursive;
+  margin: 20px auto;
+  color: #ffcc00;
 }
-.hobbiesCardContainer{
-    width: 100%;
-    display: flex;
-    margin: 30px auto;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    row-gap: 30px;
+.hobbiesCardContainer {
+  width: 100%;
+  display: flex;
+  margin: 30px auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
 }
 
 .hobbiesCard {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-basis: 40%;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid rgb(255, 255, 0);
-    border-radius: 20px;
-    transition: 0.5s;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 25%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ffcc00;
+  border-radius: 20px;
+  transition: 0.5s;
+  flex-direction: column;
 }
-.dark .hobbiesCard{
-    background-color: #272727;
+.dark .hobbiesCard {
+  background-color: #272727;
 }
-.hobbiesCard:hover{
-    background-color: yellow;
+.hobbiesCard:hover {
+  background-color: #ffcc00;
 }
-.hobbiesCard img, .hobbiesCard h5{
-    transition: 1s;
+.hobbiesCard img,
+.hobbiesCard h5 {
+  transition: 0.3s;
 }
-.hobbiesCard:hover img{
-    transform: rotate(20deg);
+.hobbiesCard:hover img {
+  transform: rotate(20deg);
 }
-.hobbiesCard:hover h5{
-    color: #121212;
+.hobbiesCard:hover h5 {
+  color: #121212;
 }
-.hobbiesCard h5{
-    font-size: 2em;    
-    font-family: 'Rubik Distressed', cursive;
-    font-weight: 400;
-}
-
-.hobbiesCard img{
-    width: 150px;
-    height: 150px;
+.hobbiesCard h5 {
+  font-size: 2em;
+  font-family: "Rubik Distressed", cursive;
+  font-weight: 400;
+  margin-top: 30px;
 }
 
-@media only screen and (max-width: 1000px){
+.hobbiesCard img {
+  width: 150px;
+  height: 150px;
+}
 
-    .HobbiesWrapper{
-        width: 90%;
-    }
+@media only screen and (max-width: 1000px) {
+  .HobbiesWrapper {
+    width: 90%;
+    box-sizing: border-box;
+  }
 
-    h2.hobbiesHeading{
-        font-size: 2em;
-    }
-    .hobbiesCard{
-       width: 250px;
-       flex-basis: auto;
-       justify-content: space-evenly;
-    }
-    .hobbiesCard h5{
-        font-size: 1em;
-        flex-basis: 50%;
-    }
-    .hobbiesCard img{
-        width: 80px;
-        height: 80px;
-    }
+  h2.hobbiesHeading {
+    font-size: 2em;
+  }
+  .hobbiesCard {
+    width: 250px;
+    flex-basis: auto;
+    justify-content: space-evenly;
+  }
+  .hobbiesCard h5 {
+    font-size: 1em;
+    flex-basis: 50%;
+  }
+  .hobbiesCard img {
+    width: 80px;
+    height: 80px;
+  }
 
-    .hobbiesCardContainer{
-        margin: auto;
-        row-gap: 5px;
-    }
-    
-
+  .hobbiesCardContainer {
+    margin: auto;
+    row-gap: 5px;
+  }
 }

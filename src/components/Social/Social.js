@@ -1,20 +1,72 @@
-import React from 'react';
 import './Social.css'
+import React, { useState } from 'react';
 
-function Social() {
-    return (
-        <>
-            <nav className="social">
-                <ul>
-                    <li className="twt"><a href="https://twitter.com/ManiMonga5" target="_blank">Twitter <i className="fa fa-twitter"></i></a></li>
-                    <li className="fa"><a href="https://m.facebook.com/mani.monga.1656?ref=bookmarks" target="_blank">Facebook <i className="fa fa-facebook"></i></a></li>
-                    <li className="insta"><a href="https://www.instagram.com/techno.phyle_/" target="_blank">Instagram <i className="fa fa-instagram"></i></a></li>
-                    <li className="linkin"><a href="https://www.linkedin.com/in/mani-monga-52602217b/" target="_blank">LinkedIN <i className="fa fa-linkedin"></i></a></li>
-                    <li className="git"><a href="https://github.com/mani-monga" target="_">GitHub <i className="fa fa-github"></i></a></li>
-                </ul>
-            </nav>
-        </>
-    )
-}
+const FloralSocial = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-export default Social;
+  const socialLinks = [
+    {
+      name: 'Twitter',
+      icon: 'fa-twitter',
+      url: 'https://x.com/ManiMonga5',
+      color: '#1DA1F2'
+    },
+    {
+      name: 'Facebook',
+      icon: 'fa-facebook',
+      url: 'https://www.facebook.com/mani.monga.1656/',
+      color: '#1877F2'
+    },
+    {
+      name: 'Instagram',
+      icon: 'fa-instagram',
+      url: 'https://www.instagram.com/mani.monga28/',
+      color: '#E4405F'
+    },
+    {
+      name: 'LinkedIn',
+      icon: 'fa-linkedin',
+      url: 'https://www.linkedin.com/in/mani-monga/',
+      color: '#0A66C2'
+    },
+    {
+      name: 'GitHub',
+      icon: 'fa-github',
+      url: 'https://github.com/mani-monga',
+      color: '#333'
+    }
+  ];
+
+  return (
+    <div className="flower-social">
+      <button 
+        className={`main-button ${isOpen ? 'active' : ''}`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <i className="fa fa-share-alt"></i>
+      </button>
+      
+      <div className={`petal-container ${isOpen ? 'open' : ''}`}>
+        {socialLinks.map((social, index) => (
+          <a
+            key={social.name}
+            href={social.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="petal"
+            style={{
+              '--index': index,
+              '--total': socialLinks.length,
+              backgroundColor: social.color
+            }}
+          >
+            <i className={`fa ${social.icon}`}></i>
+            <span className="tooltip">{social.name}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default FloralSocial;
